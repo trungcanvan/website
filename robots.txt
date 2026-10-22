@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.thangmayvinhphat.com/sitemap.xml
+Sitemap: https://www.thangmayvinhphat.com/sitemap.xml
