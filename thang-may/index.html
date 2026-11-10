@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <title>Công Ty TNHH Thang Máy Vĩnh Phát</title>
+  <meta name="description"
+    content="Thang máy Vĩnh Phát là đơn vị chuyên cung cấp các loại thang máy của các thương hiệu nổi tiếng FUJI, NIPPON, MITSUBISHI nhập khẩu từ Nhật Bản, MONTANARY nhập khẩu từ Italia và SCHNEIDER nhập khẩu từ Đức">
+  <meta name="robots" content="index, follow">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./assets/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/css/snipcart.css" />
+  <link href="./assets/css/font.css" rel="stylesheet">
+  <link href="./assets/css/icon.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWLQYPTNXM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-BWLQYPTNXM');
+  </script>
+  <link rel="stylesheet" href="styles.5d84e1609040d1dbc2a8.css">
+</head>
+
+<body class="mat-typography">
+  <app-root></app-root>
+
+  <script src="runtime-es2015.409e6590615fb48d139f.js" type="module"></script>
+  <script src="runtime-es5.409e6590615fb48d139f.js" nomodule defer></script>
+  <script src="polyfills-es5.cb32a52bc633c9710ac0.js" nomodule defer></script>
+  <script src="polyfills-es2015.879fe6e0427fd01bbdb6.js" type="module"></script>
+  <script src="scripts.a73844de5f291be94c3b.js" defer></script>
+  <script src="main-es2015.e6e97ce940fb232daf8d.js" type="module"></script>
+  <script src="main-es5.e6e97ce940fb232daf8d.js" nomodule defer></script>
+  <!-- A1.4: nut Zalo + do luot bam Goi/Zalo tren Google Analytics 4 -->
+  <a id="zalo-btn" href="https://zalo.me/0973453099" target="_blank" rel="noopener"
+    aria-label="Nhắn Zalo cho Thang Máy Vĩnh Phát">
+    <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+      <circle cx="24" cy="24" r="24" fill="#0068ff" />
+      <text x="24" y="29" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700"
+        fill="#fff">Zalo</text>
+    </svg>
+  </a>
+  <style>
+    #zalo-btn {
+      position: fixed;
+      right: 16px;
+      bottom: 24px;
+      z-index: 2147483647;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+      line-height: 0
+    }
+  </style>
+  <script>
+    (function () {
+      var last = 0;
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href*="zalo.me"]');
+        if (!a || typeof gtag !== 'function') return;
+        if (Date.now() - last < 1000) return;   // tranh dem 2 lan khi nut goi tu kich hoat lai
+        last = Date.now();
+        gtag('event', a.href.indexOf('zalo.me') !== -1 ? 'click_zalo' : 'click_call', { link_url: a.href });
+      });
+    })();
+  </script>
+</body>
+<script type="text/javascript" src="./assets/js/custom.js"></script>
+
+</html>
