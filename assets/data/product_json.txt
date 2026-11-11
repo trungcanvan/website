@@ -5,7 +5,7 @@
     "id": "thang-may-cho-nha-cai-tao",
     "name": "Thang máy cho nhà cải tạo",
     "price": 0,
-    "image": "assets/photo/thangmaychonhacaitao.jpg",
+    "image": "assets/photo/thangmaychonhacaitao.webp",
     "description": ""
   },
   {
@@ -14,7 +14,7 @@
     "id": "thang-may-dung-dien-mot-pha",
     "name": "Thang máy gia đình dùng điện 1 pha",
     "price": 0,
-    "image": "assets/photo/thangmaygiadinh1pha.png",
+    "image": "assets/photo/thangmaygiadinh1pha.webp",
     "description": ""
   },
   {
@@ -23,7 +23,7 @@
     "id": "thang-may-gia-dinh",
     "name": "Thang máy gia đình",
     "price": 0,
-    "image": "assets/photo/thangmaygiadinh.png",
+    "image": "assets/photo/thangmaygiadinh.webp",
     "description": ""
   },
   {
@@ -32,7 +32,7 @@
     "id": "thang-may-home-lift",
     "name": "Thang máy Homelift",
     "price": 0,
-    "image": "assets/photo/thangmayhomelift.png",
+    "image": "assets/photo/thangmayhomelift.webp",
     "description": ""
   },
   {
@@ -41,7 +41,7 @@
     "id": "thang-may-tai-khach",
     "name": "Thang máy Tải Khách",
     "price": 0,
-    "image": "assets/photo/thangmaytaikhach.jpg",
+    "image": "assets/photo/thangmaytaikhach.webp",
     "description": ""
   },
   {
@@ -50,7 +50,7 @@
     "id": "thang-may-lien-doanh",
     "name": "Thang máy liên doanh",
     "price": 0,
-    "image": "assets/photo/thangmayliendoanh.png",
+    "image": "assets/photo/thangmayliendoanh.webp",
     "description": ""
   }
 ]
