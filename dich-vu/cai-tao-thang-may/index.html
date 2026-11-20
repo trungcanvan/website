@@ -70,6 +70,37 @@
       });
     })();
   </script>
+  <!-- ND-02: trang Catalog - nut mo PDF day du; dien thoai khong xem duoc PDF nhung trong trang
+       (iPhone chi hien trang dau, Android khong hien) nen an khung nhung, chi de nut -->
+  <style>
+    .catalog-open{display:inline-block;margin:12px 0 16px;padding:14px 22px;background:#0d47a1;color:#fff !important;
+      border-radius:6px;font-size:17px;font-weight:600;text-decoration:none;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+    .catalog-note{margin:0 0 12px;color:#555;font-size:14px}
+  </style>
+  <script>
+    (function () {
+      var mobile = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+      function fix() {
+        var obj = document.querySelector('app-pdfview object:not([data-vp])');
+        if (!obj) return;
+        obj.setAttribute('data-vp', '1');
+        var box = obj.parentElement, url = obj.getAttribute('data');
+        var a = document.createElement('a');
+        a.className = 'catalog-open'; a.href = url; a.target = '_blank'; a.rel = 'noopener';
+        a.textContent = mobile ? 'Xem toàn bộ catalog (PDF)' : 'Mở catalog toàn màn hình';
+        a.addEventListener('click', function () { if (typeof gtag === 'function') gtag('event', 'click_catalog', { link_url: a.href }); });
+        box.parentElement.insertBefore(a, box);
+        if (mobile) {
+          var p = document.createElement('p');
+          p.className = 'catalog-note';
+          p.textContent = 'Bấm nút trên để xem đủ các trang catalog Thang Máy Vĩnh Phát.';
+          box.parentElement.insertBefore(p, box);
+          box.style.display = 'none';
+        }
+      }
+      new MutationObserver(fix).observe(document.documentElement, { childList: true, subtree: true });
+    })();
+  </script>
 </body>
 <script type="text/javascript" src="./assets/js/custom.js"></script>
 
